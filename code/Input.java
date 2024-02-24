@@ -1,13 +1,15 @@
 package code;
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Input {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the first:");
-        String firstName = scanner();
-        System.out.println("First name:" + firstName);
-        scanner.close();
-
+       String name = JOptionPane.showInputDialog("Enter your name");
+       JOptionPane.showMessageDialog(null,"hello "+  name);
+       int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+       JOptionPane.showMessageDialog(null, "You are " + age + " years old");
+   
+       double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+       JOptionPane.showMessageDialog(null, "You are " + height  + " cms tall");
+    
     }
 }
