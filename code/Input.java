@@ -1,11 +1,14 @@
 package code;
-import java.util.Random;
+
 public class Input {
     public static void main(String[] args) {
-    Random random = new Random();
-
-    boolean x = random.nextBoolean();
-    System.out.println(x);
+    String day = "friday";
+    switch(day){
+        case "sunday": System.out.println("its sunday");
+        break;
+        case "moday": System.out.println("its monday");
+        break;
+    }
 
     }
 }
