@@ -10,7 +10,8 @@ class Input{
     System.out.print("Enter the ending number");
     int e = scanner.nextInt();
     scanner.close();
-    for(int i=s; i<=e; i+=2){
+    for(int i=s; i>=e; i--){
+    
         System.out.println(i);
       
 
