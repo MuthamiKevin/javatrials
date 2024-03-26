@@ -1,10 +1,21 @@
 package code;
+
+import java.util.Scanner;
+
 public class divisbility{
     public static void main(String []args){
-        int i,j;
-        for(i=1; i<=10; i++)
-            for(j=1;j<=15;j++)
-            
-            System.out.println( i + " * " + j + " = " +(i*j) );
+      Scanner scanner = new Scanner(System.in);
+      int[] marks = new int[10];
+      int i;
+
+      for(i=0;i<=10;i++){
+        System.out.print("Enter the element" + (i) + ":");
+        marks[i] = scanner.nextInt();
+      }
+      for(i=0;i<=10;i++){
+        System.out.println(marks[i]);
+      }
+        
+      
     }
 }
