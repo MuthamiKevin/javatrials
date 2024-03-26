@@ -1,10 +1,10 @@
 package code;
 public class divisbility{
     public static void main(String []args){
-        int i,sum =0;
-        for(i=1; i<=100; i++)
-            if(i%2==0)
-            sum=sum+i;
-            System.out.println(sum);
+        int i,j;
+        for(i=1; i<=10; i++)
+            for(j=1;j<=15;j++)
+            
+            System.out.println( i + " * " + j + " = " +(i*j) );
     }
 }
